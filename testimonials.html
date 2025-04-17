@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
     <link rel="shortcut icon" href="images/forest-icon-png-29.png" type="image/x-icon">
 
     <title>Testimonials | FORESTGEAR</title>
@@ -23,6 +24,14 @@
                 <h1 class="allcaps">Forest<wbr><span class="thin-text">Gear</span></h1>
 
                 <!-- navbar -->
+                <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+                <nav class="navmenu" id="navmenu" data-visible="false">
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="gear.html">Gear</a></div>
+                    <div><a href="testimonials.html">Testimonials</a></div>
+                    <div><a href="#">About</a></div>
+                    <div><a href="#">Login</a></div>
+                </nav>
 
             </header>
         </section>
@@ -125,10 +134,15 @@
                 </div>
             </article>
         </section>
+        
+        <!-- Return to Top Button -->
+        <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img src="images/back-to-top-icon-png-7.jpg" alt=""></button></div>
 
         <footer>
-            <p>&copy; <span id="copyright"></span> Michael Roberts Productions</p>
+            <p>&copy; <span id="copyright"></span> Keira F Productions</p>
         </footer>
     </main>
 </body>
 </html>
+
+<script src="js/scripts.js"></script>
