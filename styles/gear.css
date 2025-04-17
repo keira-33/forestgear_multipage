@@ -1,0 +1,102 @@
+body {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header {
+    flex-basis: 100vw;
+    background-color: darkgreen;
+    background-image: url(../images/hero-image-forest2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+}
+header h1 {
+    align-self: center;
+    justify-self: flex-start;
+    flex-grow: 1;
+    font-size: 250%;
+    margin-left: 2em;
+}
+
+aside {
+    background-color: #555;
+    margin: 2em .5em;
+    border: 3px double #aaa;
+    border-radius: 10px;
+    flex: 1 2 20vw;
+    align-self: flex-start;
+    position: sticky;
+    top: 25px;
+}
+
+/* Filters */
+form h5 {
+    margin: .5em;
+    font-size: 120%;
+}
+.form-element {
+    padding: .5em;
+}
+.form-element input[type="text"] {
+    padding: .5em .25em;
+    background-color: #bbb;
+    width: 80%;
+    border-radius: 5px;
+}
+.form-element input[type="text"]:focus {
+    background-color: white;
+}
+.form-element input[type="checkbox"] {
+    accent-color: red;
+}
+.form-element input {
+    margin: .5em;
+}
+.form-element:hover {
+    background-color: #555;
+}
+.form-buttons {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form-buttons input {
+    padding: .5em .75em;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: 3px solid #333;
+    color: #333;
+    font-weight: bold;
+}
+.form-buttons input:hover {
+    background-color: black;
+    color: fuchsia;
+    border: 3px solid fuchsia;
+}
+.products {
+    flex: 2 1 75vw;
+}
+
+/* .product CSS */
+
+@media (max-width: 600px) {
+    header h1 {
+        text-align: center;
+        margin: 0;
+    }
+    .products {
+        gap: 1em;
+    }
+
+    /* .product mobile CSS */
+
+    aside {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .form-element input[type="text"] {
+        width: 95%;
+    }
+}
