@@ -137,6 +137,23 @@ form h5 {
     }
 
     /* .product mobile CSS */
+    .products, .product {
+        /* 1fr automatically fills the available space */
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    .product {
+        /* just one thing-single column */
+        grid-template-areas: 
+            'thumbnail'
+            'product-title'
+            'product-description'
+            'product-price';
+        margin: .5rem 0;
+        border: none;
+        border-radius: 0;
+        border-block: 3px double #aaa;
+    }
 
     aside {
         position: relative;
